@@ -15,7 +15,7 @@ function addUserAccount() {
     fi
 
     sudo usermod -aG sudo "${username}"
-    sudo passwd -d "${username}"
+    sudo passwd "${username}"
 }
 
 # Add the local machine public SSH Key for the new user account
